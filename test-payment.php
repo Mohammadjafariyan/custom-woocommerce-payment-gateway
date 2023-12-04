@@ -53,17 +53,17 @@ function my_extension_woocommerce_blocks_support() {
 
 				// registers as shared instance.
 				$container->register(
-					\Automattic\WooCommerce\Blocks\Payments\Integrations\CustomCheque::class,
+					\Automattic\WooCommerce\Blocks\Payments\Integrations\bulupay_gateway::class,
 					function() {
-						return new \Automattic\WooCommerce\Blocks\Payments\Integrations\CustomCheque();
+						return new \Automattic\WooCommerce\Blocks\Payments\Integrations\bulupay_gateway();
 					}
 				);
 
 				$payment_method_registry->register(
-					$container->get( \Automattic\WooCommerce\Blocks\Payments\Integrations\CustomCheque::class )
+					$container->get( \Automattic\WooCommerce\Blocks\Payments\Integrations\bulupay_gateway::class )
 				);
 
-				//$payment_method_registry->register( new \Automattic\WooCommerce\Blocks\Payments\Integrations\CustomCheque );
+				//$payment_method_registry->register( new \Automattic\WooCommerce\Blocks\Payments\Integrations\bulupay_gateway );
 			}
 		);
 	}

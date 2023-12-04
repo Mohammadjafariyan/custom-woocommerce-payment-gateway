@@ -9,13 +9,13 @@ use Automattic\WooCommerce\Blocks\Assets\Api;
  *
  * @since 2.6.0
  */
-final class CustomCheque extends AbstractPaymentMethodType {
+final class bulupay_gateway extends AbstractPaymentMethodType {
 	/**
 	 * Payment method name defined by payment methods extending this class.
 	 *
 	 * @var string
 	 */
-	protected $name = 'CustomCheque';
+	protected $name = 'bulupay_gateway';
 
 	/**
 	 * An instance of the Asset Api

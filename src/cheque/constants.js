@@ -1,1 +1,1 @@
-export const PAYMENT_METHOD_NAME = 'CustomCheque';
+export const PAYMENT_METHOD_NAME = 'bulupay_gateway';

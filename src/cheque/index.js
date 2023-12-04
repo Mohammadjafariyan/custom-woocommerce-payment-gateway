@@ -11,7 +11,7 @@ import { decodeEntities } from '@wordpress/html-entities';
  */
 import { PAYMENT_METHOD_NAME } from './constants';
 
-const settings = getPaymentMethodData( 'CustomCheque', {} );
+const settings = getPaymentMethodData( 'bulupay_gateway', {} );
 const defaultLabel = __( 'Check payment', 'woo-gutenberg-products-block' );
 const label = decodeEntities( settings?.title || '' ) || defaultLabel;
 
